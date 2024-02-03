@@ -150,11 +150,17 @@ ghost start
 
 ## Background
 
-*This is a project to end a bad habit of dumping my findings, ideas, and thoughts into a platform that is not really suitable for sharing & cataloguing such material efficiently.*
+>
+> *This is a project to end a bad habit of dumping my findings, ideas, and thoughts into a platform that is not really suitable for sharing & cataloguing such material efficiently.*
+>
+> *I chose [Ghost](https://github.com/TryGhost/Ghost) because of its simplicity, setup, the fact it is open-source, and it's branding which resonated with me. Historically, I am not a fond of Wordpress or other "free" self-serve blogging platforms like Tumlr, Wix, Blogger, or even Twitter - I wanted something that I could build upon, manage and own myself, at as little cost as possible.*
+>
+> *Humorously, it was also another excuse for me to create yet another (private) repository to play around with.*
+>
 
-*I chose [Ghost](https://github.com/TryGhost/Ghost) because of its simplicity, setup, the fact it is open-source, and it's branding which resonated with me. Historically, I am not a fond of Wordpress or other "free" self-serve blogging platforms like Tumlr, Wix, Blogger, or even Twitter - I wanted something that I could build upon, manage and own myself, at as little cost as possible.*
+## Copyright Disclaimer
 
-*Humorously, it was also another excuse for me to create yet another (private) repository to play around with.*
+I do not own any of this code. The rightful owner is the **[Ghost Foundation](https://ghost.org)**. I only share this project for educational, research, and support purposes. Should the **Ghost Foundation** request the termination of this repository, I will comply.
 
 
 [^1]: Docs / FAQ / Using nvm: Using nvm with local and production installs https://ghost.org/docs/faq/using-nvm/
