@@ -1,0 +1,6 @@
+yarn set version berry
+yarn --cwd current install && ghost start --no-setup-linux-user
+echo "\n\033[0;35m[LOCALGHOST] Setup complete.\n\033[0m"
+echo "Stop the ghost server: \033[0;32mghost stop\033[0m"
+echo "Start ghost server: \033[0;32mghost start\033[0m"
+echo "Show ghost server status: \033[0;32mghost ls\n\033[0m"

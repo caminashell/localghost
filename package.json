@@ -1,0 +1,39 @@
+{
+  "name": "localghost",
+  "description": "Modified version of a clean, minimal default theme for the Ghost publishing platform",
+  "version": "5.79.0",
+  "license": "MIT",
+  "author": {
+    "name": "Camina Shell",
+    "email": "92443358+caminashell@users.noreply.github.com",
+    "url": "https://github.com/caminashell"
+  },
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "private": true,
+  "workspaces": [
+    "versions/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caminashell/localghost.git"
+  },
+  "bugs": "https://github.com/caminashell/localghost/issues",
+  "contributors": [
+    "https://github.com/caminashell/localghost/contributors"
+  ],
+  "engines": {
+    "ghost": ">=5.0.0",
+    "node": "^18.19.0",
+    "npm": "^10.4.0",
+    "yarn": "^4.1.0"
+  },
+  "scripts": {
+    "preinstall": "yarn cache clean --all && rm -rf ~/.yarn//berry/metadata"
+  },
+  "packageManager": "yarn@4.1.0"
+}
