@@ -2,7 +2,9 @@
 
 **TL;DR:** clone. run `./setup`
 
-***Uses:** https://github.com/tryghost/ghost Version 5.79.0 + https://github.com/tryghost/casper Version 5.7.0*
+**Uses:** [Ghost](https://github.com/tryghost/ghost) Version 5.79.0 / [Casper](https://github.com/tryghost/casper) Version 5.7.0
+**Project disk usage:** 48M
+**Installed disk usage:** 591M
 
 ## Why does this exist?
 
@@ -22,12 +24,14 @@ For this project I did the very same thing, but made some minor adjustments to s
 
 ## Preparation Assumptions
 
-The following on your system would be handy before getting started;
-
-- Node Version Manager (NVM) (**not required**)
-- Node 18 (LTS / Hydrogen)
-- Node Package Manager 10 (NPM, bundled with Node)
-- Yarn (just having yarn installed should be enough)
+> [!IMPORTANT]
+> The following on your system would be handy before getting started;
+>
+> - Node Version Manager (NVM) (**not required**)
+> - Node 18 (LTS / Hydrogen)
+> - Node Package Manager 10 (NPM, bundled with Node)
+> - Yarn (just having yarn installed should be enough)
+>
 
 ## Install & Go
 
@@ -48,23 +52,25 @@ Reduced the amount of stuff you'll need to do - simply run:
 
 ### [5.79.0] Security vulnerability in many dependency packages
 
-Something I picked up on pretty much from the get go...
-
-- **CRITICAL** (1)
-  - [Arbitrary Code Execution in underscore](https://github.com/caminashell/localghost/security/dependabot/34)
-- **HIGH** (9)
-  - [Prototype Pollution in lodash](https://github.com/caminashell/localghost/security/dependabot/60)
-  - [Knex.js has a limited SQL injection vulnerability](https://github.com/caminashell/localghost/security/dependabot/50)
-  - [Luxon Inefficient Regular Expression Complexity vulnerability](https://github.com/caminashell/localghost/security/dependabot/49)
-  - [decode-uri-component vulnerable to Denial of Service (DoS)](https://github.com/caminashell/localghost/security/dependabot/45)
-  - [Moment.js vulnerable to Inefficient Regular Expression Complexity](https://github.com/caminashell/localghost/security/dependabot/42)
-  - [Crash in HeaderParser in dicer](https://github.com/caminashell/localghost/security/dependabot/40)
-  - [Path Traversal: 'dir/../../filename' in moment.locale](https://github.com/caminashell/localghost/security/dependabot/39)
-  - [Inefficient Regular Expression Complexity in nth-check](https://github.com/caminashell/localghost/security/dependabot/36)
-  - [Regular Expression Denial of Service in trim](https://github.com/caminashell/localghost/security/dependabot/35)
-- **MODERARATE** (18)
-- **LOW** (2)
-
+>
+> [!CAUTION]
+> Something I picked up on pretty much from the get go...
+>
+> - **CRITICAL** (1)
+>   - [Arbitrary Code Execution in underscore](https://github.com/caminashell/localghost/security/dependabot/34)
+> - **HIGH** (9)
+>   - [Prototype Pollution in lodash](https://github.com/caminashell/localghost/security/dependabot/60)
+>   - [Knex.js has a limited SQL injection vulnerability](https://github.com/caminashell/localghost/security/dependabot/50)
+>   - [Luxon Inefficient Regular Expression Complexity vulnerability](https://github.com/caminashell/localghost/security/dependabot/49)
+>   - [decode-uri-component vulnerable to Denial of Service (DoS)](https://github.com/caminashell/localghost/security/dependabot/45)
+>   - [Moment.js vulnerable to Inefficient Regular Expression Complexity](https://github.com/caminashell/localghost/security/dependabot/42)
+>   - [Crash in HeaderParser in dicer](https://github.com/caminashell/localghost/security/dependabot/40)
+>   - [Path Traversal: 'dir/../../filename' in moment.locale](https://github.com/caminashell/localghost/security/dependabot/39)
+>   - [Inefficient Regular Expression Complexity in nth-check](https://github.com/caminashell/localghost/security/dependabot/36)
+>   - [Regular Expression Denial of Service in trim](https://github.com/caminashell/localghost/security/dependabot/35)
+> - **MODERARATE** (18)
+> - **LOW** (2)
+>
 
 ### [5.79.0] Simply testing the OOB start/stop functionality produced a fault
 
@@ -132,21 +138,23 @@ ghost start
 
 #### Workaround
 
-Suggested in [#711](https://github.com/TryGhost/Ghost-CLI/issues/711), to start ghost server with the following option;
-
-```sh
-ghost start --no-setup-linux-user
-```
+> [!TIP]
+> Suggested in [#711](https://github.com/TryGhost/Ghost-CLI/issues/711), to start ghost server with the following option;
+>
+> ```sh
+> ghost start --no-setup-linux-user
+> ```
+>
 
 ---
 
 ## Background
 
-This is a project to end a bad habit of dumping my findings, ideas, and thoughts into a platform that is not really suitable for sharing & cataloguing such material efficiently.
+*This is a project to end a bad habit of dumping my findings, ideas, and thoughts into a platform that is not really suitable for sharing & cataloguing such material efficiently.*
 
-I chose [Ghost](https://github.com/TryGhost/Ghost) because of its simplicity, setup, the fact it is open-source, and it's branding which resonated with me. Historically, I am not a fond of Wordpress or other "free" self-serve blogging platforms like Tumlr, Wix, Blogger, or even Twitter - I wanted something that I could build upon, manage and own myself, at as little cost as possible.
+*I chose [Ghost](https://github.com/TryGhost/Ghost) because of its simplicity, setup, the fact it is open-source, and it's branding which resonated with me. Historically, I am not a fond of Wordpress or other "free" self-serve blogging platforms like Tumlr, Wix, Blogger, or even Twitter - I wanted something that I could build upon, manage and own myself, at as little cost as possible.*
 
-Humorously, it was also another excuse for me to create yet another (private) repository to play around with.
+*Humorously, it was also another excuse for me to create yet another (private) repository to play around with.*
 
 
 [^1]: Docs / FAQ / Using nvm: Using nvm with local and production installs https://ghost.org/docs/faq/using-nvm/
