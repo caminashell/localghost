@@ -1,0 +1,8 @@
+**/*.log
+.ghostpid
+.pnp.*
+.vscode
+**/.yarn/*
+!**/.yarn/releases
+!**/.yarn/plugins
+**/node_modules
