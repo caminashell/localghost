@@ -2,9 +2,9 @@
 
 **TL;DR:** clone. run `./setup`
 
-**Uses:** [Ghost](https://github.com/tryghost/ghost) Version 5.79.0 / [Casper](https://github.com/tryghost/casper) Version 5.7.0
-**Project disk usage:** 48M
-**Installed disk usage:** 591M
+- **Uses:** [Ghost](https://github.com/tryghost/ghost) Version 5.79.0 / [Casper](https://github.com/tryghost/casper) Version 5.7.0
+- **Project disk usage:** 48M
+- **Installed disk usage:** 591M
 
 ## Why does this exist?
 
